@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.advcaptcha-container {
+  margin-top: 20px;
+  height: 100px;
+  width: 300px;
+  align-items: center;
+
+}
+
+.advcaptcha-switch {
+  top: 50%;
+transform: translateY(-50%);
+}
+
+.advcaptcha-notarobot-text {
+  margin-left: 80px;
+}
+
+#random-img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: static;
+}
+
+.dialog-popup {
+  width: 500px;
+  position: static;
+  height: 500px;
+
+
+}
+
+.dialog-container {
+  width: 1000px;
+  height: 500px;
+  align-items: center;
+  position: fixed;
+  align-items: center;
+}
+
+#img-container {
+  align-items: center;
+  position: static;
+
+}
+
+.canvas-style {
+  border: 3px solid black;
+  width: 250px;
+  height: 250px;
+
+  background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=0.672xw:1.00xh;0.166xw,0&resize=640:*');
+  background-size: 250px;
+}
+
+.textfield-input {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
