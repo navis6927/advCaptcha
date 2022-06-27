@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210813/pngtree-tech-geometric-gray-block-abstract-futuristic-art-modern-white-background-image_760651.jpg');
 }
 
 code {
@@ -13,10 +14,12 @@ code {
 }
 
 .advcaptcha-container {
-  margin-top: 20px;
+  margin-top: 50px;
   height: 100px;
   width: 300px;
   align-items: center;
+  display: flex;
+  flex-direction: column;
 
 }
 
@@ -37,6 +40,7 @@ transform: translateY(-50%);
   margin-left: auto;
   margin-right: auto;
   position: static;
+  z-index: 999;
 }
 
 .dialog-popup {
@@ -48,8 +52,8 @@ transform: translateY(-50%);
 }
 
 .dialog-container {
-  width: 1000px;
-  height: 500px;
+  width: 1400px;
+  height: 600px;
   align-items: center;
   position: fixed;
   align-items: center;
@@ -58,6 +62,7 @@ transform: translateY(-50%);
 #img-container {
   align-items: center;
   position: static;
+  z-index: 1;
 
 }
 
@@ -65,8 +70,7 @@ transform: translateY(-50%);
   border: 3px solid black;
   width: 250px;
   height: 250px;
-
-  background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=0.672xw:1.00xh;0.166xw,0&resize=640:*');
+  background-image: url('https://images.unsplash.com/photo-1594084442492-890cdf85dbcf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2F2YW5uYWglMjBjYXR8ZW58MHx8MHx8&w=1000&q=80');
   background-size: 250px;
 }
 
@@ -74,5 +78,88 @@ transform: translateY(-50%);
   position: fixed;
   bottom: 0;
   right: 0;
+}
+
+.rectangle {
+  border: 5px solid #FF0000;
+  position: absolute;
+  z-index: 999;
+}
+
+.navbar-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.appbar {
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 27%, rgba(0,212,255,1) 100%);
+}
+
+.about-advcaptcha {
+  margin-top: 200px;
+  width: 1000px;
+  height: 450px;
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formgroup {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.advcaptcha-under-logo {
+  font-size: 10px;
+}
+
+.logo-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutus-main-paper {
+  margin-top: 150px;
+  width: 1000px;
+  height: 1900px;
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.what-is-advcaptcha {
+  margin-top: 40px;
+  text-decoration: underline;
+}
+
+.cat-example {
+  width: 1000px;
+
+}
+
+.advcaptcha-prompt {
+  font-family: 'Courier New', monospace;
+}
+
+.cat-example-ac{
+  width: 495px;
+  height: 495px;
+}
+.horizontal-line {
+  color: black;
+  display: block;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+}
+.adv-captcha-photo {
+  width: 500px;
+  height: 230px
 }
 
