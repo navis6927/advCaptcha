@@ -49,8 +49,6 @@ function ObjectDetector(props) {
     initDraw(document.getElementById("img-container"));
     document.getElementById("random-img").style.backgroundImage=photos[Math.floor(Math.random()*photos.length-1)];
     const imageElement = document.createElement("img");
-    // imageElement.src =
-    //   "https://images.unsplash.com/photo-1594084442492-890cdf85dbcf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2F2YW5uYWglMjBjYXR8ZW58MHx8MHx8&w=1000&q=80";
     imageElement.src = img;
     imageElement.crossOrigin = "anonymous";
     imageElement.onload = async () => {
@@ -61,6 +59,7 @@ function ObjectDetector(props) {
   const detectObjectOnImage = async (imageElem) => {
     const model = await cocoSsd.load({});
     const predictions = await model.detect(imageElem, 6);
+    console.log("Predictions: ", predictions)
     setPrediction(predictions);
   };
 

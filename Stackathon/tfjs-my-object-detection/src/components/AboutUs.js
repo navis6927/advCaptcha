@@ -27,7 +27,7 @@ function AboutUs() {
       <ul>
         <li>
         <Typography>advCaptcha is an online service for keeping out bots, spam, & abuse by asking two simple
-        questions that will allow web developers to distinguish between bot and human. To allow a user to continue surfing their website, they must correctly draw a box that covers the focus of the image and confirms what the focus of the image is. Developers can implement advCaptcha to keep unwanted bot activity off their website.
+        questions that will allow website admins to distinguish between bot and human. To allow a user to continue surfing their website, they must correctly draw a box that covers the focus of the image and confirm what the focus of the image is. Developers can implement advCaptcha to keep unwanted bot activity off their website.
       </Typography>
         </li>
       </ul>
@@ -37,7 +37,7 @@ function AboutUs() {
         <li>
         <Typography>advCaptcha utilizes Tensorflow.JS' object detection model using 'COCO-SSD' dataset
         to identify single/multiple objects in a single image/video/canvas. We use the predictions made
-        by the object dectection model and the user's input to determine whether or not a human is trying to enter the website. The width and height of the rectangular-box from the user's input is compared to the width and height of the model's prediction.
+        by the object dectection model and the user's input to determine whether or not it is a human trying to enter the website. The width and height of the rectangular-box from the user's input is compared to the width and height of the model's prediction.
       </Typography>
         </li>
       </ul>
@@ -54,7 +54,7 @@ function AboutUs() {
       <Typography variant="h4" className="what-is-advcaptcha">How accurate is this?</Typography>
       <ul>
         <li>
-        <Typography>advCaptcha does consider that users will sometimes have a box size difference that what the model predicted. The number of failed attempts a IP can have can be controlled. For instance, a website can block a specific IP after 3 failed attempts, 5 failed attempts, 10 failed attempts, etc. In addition, the accuracy can be altered by the website developer. By default, users must not exceed a 10% error. This is calculated using the equation below:
+        <Typography>advCaptcha considers that at times, users will create box dimensions different than what the model predicted. Fortunately, the number of failed attempts a IP can be controlled. For instance, a website can block a specific IP after 3 failed attempts, 5 failed attempts, 10 failed attempts, etc. In addition, the accuracy can be altered by the website admin. By default, users must not exceed a 10% error. This is calculated using the equation below:
       </Typography>
         </li>
       </ul>

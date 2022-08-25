@@ -18,14 +18,12 @@ function Navbar() {
           </Typography>
         </Grid>
         <Grid item xs={7}>
-          <TabContext value={value} onChange={(e, val) => {setValue(val)}}>
           <Tabs centered indicator = 'secondary' textColor='inherit' value = {value} onChange={(e, val) => {setValue(val)}}>
             <Tab label='Test it Out!' />
           </Tabs>
-          </TabContext>
         </Grid>
         <Grid item xs={1}/>
-        <Button variant="contained" href='/about' centered>About advCaptcha</Button>
+        <Button variant="contained" href='/about'>About advCaptcha</Button>
       </Grid>
       </Toolbar>
     </AppBar>
